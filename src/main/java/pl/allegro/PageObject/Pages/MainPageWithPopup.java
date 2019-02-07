@@ -28,7 +28,6 @@ public class MainPageWithPopup extends PageObject{
         return this;
     }
     public ElectronicsPage navigateToElectronicsPage(){
-        //go to next site return object here
         linkElektroncs.click();
         logger.info("Navigate to Electronics");
         return new ElectronicsPage(getDriver());
