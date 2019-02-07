@@ -38,10 +38,6 @@ public class AllegroSortDescendantTest {
         //W
         externalAndPortableDrives.setfilterDiscCapacity("500","1000");
         externalAndPortableDrives.setSortingProductsByPriceDescendant();
-//                List<Double> list = externalAndPortableDrives.getListOfPrices();
-//        for(Double e:list){
-//            System.out.println(e);
-//        }
         //T
         checkIfPricesAreSorted(externalAndPortableDrives.getListOfPrices());
 

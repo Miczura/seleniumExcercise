@@ -6,14 +6,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class ExternalAndPortableDrives extends PageObject {
-    WebDriverWait wait;
+    private WebDriverWait wait;
 
     @FindBy(xpath = "//input[@id='pojemnosc-dysku-od']")
     private WebElement inputFromDiscCapacityFilter;
