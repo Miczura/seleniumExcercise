@@ -33,12 +33,14 @@ public class MainPageWithPopup extends PageObject{
         return new ElectronicsPage(getDriver());
     }
 
-    public boolean closeConsent() {
+    public void closeConsentIfVisible() {
         if (isDisplayed()) {
             rodoConsent.click();
             logger.info("Rodo consent confirmed");
+        }else{
+            logger.info("There is no consent - proceeding");
         }
-        return false;
+
     }
 
     private boolean isDisplayed() {

@@ -28,7 +28,7 @@ public class AllegroSortDescendantTest {
     @Before
     public void openAllegro(){
         mainPageWithPopup = new MainPageWithPopup(driver).navigateTo();
-        mainPageWithPopup.closeConsent();
+        mainPageWithPopup.closeConsentIfVisible();
     }
 
     @Test
